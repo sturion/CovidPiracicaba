@@ -1,0 +1,140 @@
+#infectadosIco{
+
+    height: var(--quadrado);
+    width:var(--quadrado);
+    background: url('/web/svg/infectados.svg') no-repeat;
+
+}
+#mortosIco{
+
+height: var(--quadrado);
+width: var(--quadrado);
+background: url('/web/svg/mortos.svg') no-repeat;
+
+}
+#hospitalizadosIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/hospitalizados.svg') no-repeat;
+
+}
+#suspeitosIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/suspeitos.svg') no-repeat;
+
+}
+#recuperadosIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/recuperados.svg') no-repeat;
+}
+#descartadosIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/descartados.svg') no-repeat;
+
+}
+.indicadoresNom {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    text-align: left;
+    grid-area: indicadores;
+    
+
+
+}
+.indicadoresIco {
+
+
+    display: flex;
+    height: var(--conteudo);  
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right:20px;
+    grid-area: icones;
+
+    
+}
+.indicadoresUlt {
+
+
+    display: flex;
+    height: var(--conteudo);  
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ulti;
+
+    
+}
+.indicadoresPre {
+
+
+    display: flex;
+    height: var(--conteudo);  
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: prev;
+
+    
+}
+.legenda{
+
+    font-family: var(--titulo);
+    font-size: 0.8em;  
+    text-transform: uppercase;
+    margin-top: 30px;
+
+}
+.legIco{
+
+    width: var(--quadrado);
+    height: var(--quadrado);
+    
+}
+
+#norteIco{
+
+    height: var(--quadrado);
+    width:var(--quadrado);
+    background: url('/web/svg/norte.svg') no-repeat;
+
+}
+#centralIco{
+
+height: var(--quadrado);
+width: var(--quadrado);
+background: url('/web/svg/central.svg') no-repeat;
+
+}
+#lesteIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/leste.svg') no-repeat;
+
+}
+#sulIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/sul.svg') no-repeat;
+
+}
+#oesteIco{
+
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/oeste.svg') no-repeat;
+}

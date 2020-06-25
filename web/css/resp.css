@@ -1,0 +1,140 @@
+@media(max-width: 1250px){
+
+
+    #mapa{
+
+
+        margin-left: 45%;
+        margin-bottom:50px; 
+
+
+    }
+
+    .conteudoMapa{
+
+        left:20%;
+        background-color: var(--cinza);
+    }
+    
+
+}
+@media(max-width: 1000px){
+
+    :root{
+
+        
+        --quadrado2: 140px;
+        --margin:15px;
+    }
+
+    
+    body{
+
+        font-size: 1.5vw;
+    }
+    
+
+  #mapa{
+
+
+    width: 60%;
+    height: 60%;
+    margin-left: 0;
+    margin: 0 auto;
+
+  }  
+    
+    .conteudoMapa{
+
+       
+        display: none;
+        /* position: relative;
+        display:block;
+        left: 38%;
+        top:10px; */
+       
+       
+    }
+
+    #aviso{
+
+        font-size: 2vw;
+        text-align: center;
+        top: -80px;
+    }
+
+    #pct{
+
+        font-size: 5vw;
+    }
+
+    #pctIsoLeg{
+
+        font-size:2vw;
+        
+    }
+
+    #isoLeg{
+
+        font-size: 2vw;
+    }
+
+    .indicadoresIco{
+
+        display: none;
+    }
+    .indicadoresNom{
+
+       padding-left: 25px;
+    }
+
+    .legenda{
+
+        font-size: 16px;
+    }
+    .indicadoresSobre{
+
+        font-size: 3vw;
+    }
+
+    .info{
+
+        font-size: 25px;
+    }
+
+    #modoDeCor{
+
+        bottom: 50px;
+        right: 30px;
+
+    }
+}
+
+@media(max-width: 500px){
+
+
+    :root{
+
+        
+        --quadrado2: 160px;
+    
+    }
+
+    #aviso{
+
+        font-size: 3vw;
+    }
+
+    .indicadoresSobre{
+
+        font-size: 4vw;
+    }
+    
+    #pctIsoLeg{
+
+        font-size:3vw;
+        line-height: 12px;
+    }
+
+
+}

@@ -1,0 +1,71 @@
+
+.conteudoMapa{
+
+    position: absolute;
+    font-size: 2em;
+    left:14%;
+    top:200px;
+    
+
+
+}
+.conteudoMapa div ul{
+
+   
+   display: none;
+   transition: var(--tempo) ease-in;
+
+}
+
+#norte strong{
+
+  color:#9263A7;  
+
+}
+
+#leste strong{
+
+    color:#E15B10;
+
+}
+
+#sul strong{
+
+    color:#324C93;
+}
+
+#central strong{
+
+    color:#56AF31;
+}
+
+#oeste strong{
+
+    color:#F8DC00;
+}
+
+#oseteBairros{
+
+
+}
+
+#norte{
+
+    margin: var(--margin);
+}
+#central{
+
+    margin: var(--margin);
+}
+#leste{
+
+    margin: var(--margin);
+}
+#sul{
+
+    margin: var(--margin);
+}
+#oeste{
+
+    margin: var(--margin);
+}

@@ -5,7 +5,9 @@
 
 
         margin-left: 45%;
-        margin-bottom:50px; 
+        margin-bottom:50px;
+        width: 45%;
+        height: 45%; 
 
 
     }
@@ -14,6 +16,7 @@
 
         left:20%;
         background-color: var(--cinza);
+        
     }
     
 
@@ -48,10 +51,7 @@
 
        
         display: none;
-        /* position: relative;
-        display:block;
-        left: 38%;
-        top:10px; */
+        
        
        
     }

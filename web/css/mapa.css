@@ -2,7 +2,7 @@
 .conteudoMapa{
 
     position: absolute;
-    font-size: 2em;
+    font-size: 1.25vw;
     left:14%;
     top:200px;
     
@@ -44,11 +44,6 @@
     color:#F8DC00;
 }
 
-#oseteBairros{
-
-
-}
-
 #norte{
 
     margin: var(--margin);
@@ -68,4 +63,16 @@
 #oeste{
 
     margin: var(--margin);
+}
+#distritos{
+
+    margin: var(--margin);
+    background-color: var(--cinza);
+    
+}
+#indefinidos{
+
+    margin: var(--margin);
+    background-color: var(--cinza);
+    
 }

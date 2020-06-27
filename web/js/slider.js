@@ -17,11 +17,11 @@ function changeCss (){
     document.getElementById("aviso").style.display = "none";
     document.getElementById("pctIsoLeg").innerHTML = `Taxa Simulada`;
 
-    if(isolamento >= 62){
+    if(isolamento >= 60){
 
         document.getElementById("aviso").style.display = "block";
         document.getElementById("aviso").style.backgroundColor = "rgba(20,125,190,0.85)";
-        document.getElementById("aviso").innerHTML = `Taxa de Isolamento ideal +62%`
+        document.getElementById("aviso").innerHTML = `Taxa de Isolamento ideal +60%`
     }
 
        let hospitalizadosSlider = document.getElementById("hospitalizados").innerHTML;
@@ -41,7 +41,7 @@ function changeCss (){
 
         
 
-    if (demandaLeitos>50){
+    if (demandaLeitos>100){
 
         document.getElementById("aviso").style.display = "block";
         document.getElementById("aviso").style.backgroundColor = "rgba(190,0,0,0.85)";

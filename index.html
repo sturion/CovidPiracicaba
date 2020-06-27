@@ -24,7 +24,6 @@
 
 
 </head>
-
 <body>
 
     <header>
@@ -35,7 +34,7 @@
     </header>
 
     <div>
-        <h1 class="subtitulo">\\ Dados semanais por região de Piracicaba 24-06-2020 \\</h1>
+        <h1 class="subtitulo"><a href="https://www.facebook.com/negribarjas/photos/a.1040021242705924/3914350611939625/" target="_blank">\\ Dados semanais por região de Piracicaba 19-06-2020 \\</a></h1>
     </div>
 
     <div id="mapa">
@@ -861,6 +860,22 @@
             </ul>
 
         </div>
+        <div id="distritos">
+
+            <strong>Distritos </strong><a id="infecDistritos">58</a> Casos
+            <div id="distritosPrev"></div>
+
+            <ul id="oesteBairros">
+                <li></li>
+            </ul>
+
+        </div>
+        <div id="indefinidos">
+
+            <strong>Indefinidos </strong><a id="infecIndefinidos">116</a> Casos
+            <div id="indefinidosPrev"></div>
+
+        </div>
 
     </div>
 
@@ -878,7 +893,7 @@
 
             <label id="isoLeg">Isolamento Social</label>
             <input id="isolamento" type="range" id="isolamento" name="isolamento" min="0" max="75" value="41">
-            <span id="pct">41%</span>
+            <a id="pct" href="https://www.saopaulo.sp.gov.br/coronavirus/isolamento/" target="_blank">41%</a>
             <span id="pctIsoLeg">Ultima taxa registrada</span>
 
         </div>
@@ -889,7 +904,7 @@
     <div class="esp">
     </div>
     <div>
-        <h1 class="titulo">\\ Dados semanais de Piracicaba por região 19-06-2020 \\</h1>
+        <h1 class="titulo"><a href="https://www.facebook.com/negribarjas/photos/a.1040021242705924/3914350611939625/" target="_blank">\\ Dados semanais de Piracicaba por região 19-06-2020 \\</a></h1>
     </div>
 
     <div class="conteudo" id="tabelaMapa">
@@ -902,6 +917,8 @@
             <li id="lesteIco"></li>
             <li id="sulIco"></li>
             <li id="oesteIco"></li>
+            <li class="legIco"></li>
+            <li class="legIco"></li>
             <li class="legIco"></li>
 
 
@@ -916,6 +933,8 @@
             <li>Leste</li>
             <li>Sul</li>
             <li>Oeste</li>
+            <li>Distritos</li>
+            <li>Indefinidos</li>
             <li>Total</li>
 
 
@@ -925,12 +944,14 @@
         <ul class="indicadoresUlt">
 
             <li class="legenda">Ultimo Registro</li>
-            <li>274</li>
-            <li>274</li>
-            <li>310</li>
-            <li>257</li>
-            <li>213</li>
-            <li>1328</li>
+            <li>400</li>
+            <li>374</li>
+            <li>416</li>
+            <li>355</li>
+            <li>305</li>
+            <li>58</li>
+            <li>116</li>
+            <li>2024</li>
 
 
         </ul>
@@ -943,6 +964,8 @@
             <li id="pctLeste">-</li>
             <li id="pctSul">-</li>
             <li id="pctOeste">-</li>
+            <li id="pctDistritos">-</li>
+            <li id="pctIndefinidos">-</li>
             <li id="totalRegiao">-</li>
 
 
@@ -954,8 +977,8 @@
     </div>
 
     <div>
-        <h1 class="titulo">\\ Dados diários totais de Piracicaba 27-06-2020 \\</h1>
-    </div>
+              <h1 class="titulo"><a href="https://www.facebook.com/negribarjas/photos/a.1040021242705924/3939979072710112/" target="_blank">\\ Dados diários totais de Piracicaba 25-06-2020 \\</a></h1>
+  </div>
 
     <div class="conteudo" id="indicadores">
 
@@ -991,8 +1014,8 @@
             <li id="infectados">2355</li>
             <li id="mortos">88</li>
             <li id="hospitalizados">718</li>
-            <li id="recuperados">1549</li>
-            <li id="suspeitos">826</li>
+            <li id="recuperados">826</li>
+            <li id="suspeitos">1549</li>
             <li id="descartados">3782</li>
 
         </ul>
@@ -1015,46 +1038,46 @@
     <div class="esp2"></div>
 
     <div>
-        <h1 class="titulo">\\ Sistema de Súade de Piracicba - Fonte: CMSP \\</h1>
+        <h1 class="titulo"><a href="https://transparencia.piracicaba.sp.gov.br/relatorio/listagem-de-servidores/" target="_blank">\\ Sistema de Súade de Piracicba - Fonte: CMSP \\</a></h1>
     </div>
     <div class="info">
 
         <div>
             <div id="hospitais"></div>
             <h3>Hospitais</h3>
-            <span>5</span>
+            <strong>5</strong>
         </div>
         <div>
             <div id="leitos"></div>
             <h3>Total de Leitos UTI</h3>
-            <span>100</span>
+            <span><strong id="numeroLeitos">100</strong> (Com Respiradores)</span>
         </div>
         <div>
             <div id="medicos"></div>
             <h3>Médicos Ativos</h3>
-            <span>290</span>
+            <strong>290</strong>
         </div>
         <div>
             <div id="ambulancias"></div>
             <h3>Ambulâncias</h3>
-            <span>1(Exclusiva)</span>
+            <span><strong>1</strong>(Exclusiva)</span>
         </div>
         <div>
             <div id="enfermeiros"></div>
             <h3>Enfermeiros</h3>
-            <span>600</span>
+            <strong>600</strong>
         </div>
         <div>
             <div id="hospitaisCampanha"></div>
             <h3>Hospitais Campanha</h3>
-            <span>1</span>
+            <strong>1</strong>
         </div>
 
     </div>
     <div class="esp2"></div>
 
     <div>
-        <h1 class="titulo">\\ População de Piracicba - Fonte: IBGE -2010 \\ </h1>
+        <h1 class="titulo"><a href="https://cidades.ibge.gov.br/brasil/sp/piracicaba/panorama" target="_blank">\\ População de Piracicba - Fonte: IBGE -2010 \\</a></h1>
     </div>
     <div class="info">
 

@@ -17,31 +17,38 @@ function changeCss (){
     document.getElementById("aviso").style.display = "none";
     document.getElementById("pctIsoLeg").innerHTML = `Taxa Simulada`;
 
-    if(isolamento >= 60){
+    let infectadosSlider = document.getElementById("infectados").innerHTML;
+    let infectadosPrevSlider = document.getElementById("infectadosPrev").innerHTML;
+
+   infectadosSlider= parseInt(infectadosSlider);
+   infectadosPrevSlider= parseInt(infectadosPrevSlider);
+
+
+    if(infectadosSlider == infectadosPrevSlider){
 
         document.getElementById("aviso").style.display = "block";
         document.getElementById("aviso").style.backgroundColor = "rgba(20,125,190,0.85)";
-        document.getElementById("aviso").innerHTML = `Taxa de Isolamento ideal +60%`
+        document.getElementById("aviso").innerHTML = `Taxa de Isolamento ideal`
     }
 
        let hospitalizadosSlider = document.getElementById("hospitalizados").innerHTML;
        let hospitalizadosPrevSlider = document.getElementById("hospitalizadosPrev").innerHTML;
-       //let recuperadosSlider = document.getElementById("recuperados").innerHTML;
-       //let recuperadosPrevSlider =document.getElementById("recuperadosPrev").innerHTML;
-
+       let numeroLietos = document.getElementById("numeroLeitos").innerHTML;
+       
+      
         hospitalizadosSlider =  parseInt(hospitalizadosSlider);
         hospitalizadosPrevSlider = parseInt(hospitalizadosPrevSlider);
-        //recuperadosSlider = parseInt(recuperadosSlider);
-        //recuperadosPrevSlider = parseInt(recuperadosPrevSlider);
+        numeroLietos = parseInt(numeroLietos);
+        
 
        let novosInfec = hospitalizadosPrevSlider - hospitalizadosSlider;
-       //let novosRecup = recuperadosPrevSlider - recuperadosSlider;
+       
        let demandaLeitos = (novosInfec)*0.15;
        console.log(demandaLeitos)
 
         
 
-    if (demandaLeitos>100){
+    if (demandaLeitos>numeroLietos){
 
         document.getElementById("aviso").style.display = "block";
         document.getElementById("aviso").style.backgroundColor = "rgba(190,0,0,0.85)";

@@ -109,7 +109,7 @@ strong{
     
     max-width: var(--conteudo);  
     width: 100%;
-    margin: -50px auto 0;
+    margin: 0 auto 0;
     display: grid;
     grid-template-areas: 'icones indicadores ulti prev';
     font-size: 3em;

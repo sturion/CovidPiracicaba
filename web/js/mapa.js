@@ -4,14 +4,14 @@ document.getElementById("oeste").addEventListener("mouseout", mouseOut1);
 function mouseOver1() {
 
     document.getElementById("oesteBairros").style.display = "block";
-    // document.getElementById("oesteBairros").style.opacity = "100%";
+    //document.getElementById("oesteBairros").style.opacity = "100%";
 }
 
 function mouseOut1(id) {
 
 
     document.getElementById("oesteBairros").style.display = "none";
-    //  document.getElementById("oesteBairros").style.opacity = "0%";
+    //document.getElementById("oesteBairros").style.opacity = "0%";
 
 }
 

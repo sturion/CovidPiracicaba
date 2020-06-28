@@ -5,13 +5,10 @@
     font-size: 1.25vw;
     left:14%;
     top:1000px;
-    
-
-
+ 
 }
 .conteudoMapa div ul{
-
-   
+  
    display: none;
    transition: var(--tempo) ease-in;
 

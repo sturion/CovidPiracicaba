@@ -149,19 +149,19 @@ strong{
 #modoDeCor{
 
     position: fixed;
-    width: auto;
-    height: auto;
-    bottom: -50px;
+    width: 25px;
+    height: 25px;
+    bottom: 30px;
     right: 50px;
-    font-size: 20em;
     transition: var(--tempo);
+    background-color: var(--branco);
     cursor:pointer;
+    border-radius: 5px;
 
 
 }
 
 #modoDeCor:hover{
 
-    
-    color: var(--vermelho);
+    background-color: var(--vermelho);
 }

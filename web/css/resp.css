@@ -19,6 +19,12 @@
     
         
     }
+    #modoDeCor{
+
+        bottom: 100px;
+        right: 50px;
+
+    }
 }
 @media(max-width: 1000px){
 
@@ -101,12 +107,7 @@
         font-size: 25px;
     }
 
-    #modoDeCor{
-
-        bottom: 50px;
-        right: 30px;
-
-    }
+    
 }
 
 @media(max-width: 500px){
@@ -134,6 +135,12 @@
         font-size:3vw;
         line-height: 12px;
     }
+    
+    #modoDeCor{
 
+        bottom: 85px;
+        right: 45px;
+
+    }
 
 }

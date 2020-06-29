@@ -156,7 +156,7 @@ strong{
     transition: var(--tempo);
     background-color: var(--branco);
     cursor:pointer;
-    border-radius: 5px;
+    
 
 
 }

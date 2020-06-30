@@ -1,12 +1,27 @@
 
-.conteudoMapa{
+#caixaMapa{
 
-    position: absolute;
-    font-size: 1.25vw;
-    left:14%;
-    top:1000px;
- 
+width: 80%;
+margin: 0 auto 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
 }
+#mapa{
+    
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    
+}
+.conteudoMapa{
+ 
+    font-size: 1.25vw;
+    margin-left: 50px;
+    margin-top: 10px; 
+}
+
 .conteudoMapa div ul{
   
    display: none;

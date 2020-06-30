@@ -1,146 +1,89 @@
-@media(max-width: 1250px){
-
-
-    #mapa{
-
-
-        margin-left: 45%;
-        margin-bottom:50px;
-        width: 45%;
-        height: 45%; 
-
-
-    }
-
-    .conteudoMapa{
-
-        left:20%;
-        background-color: var(--cinza);
-    
-        
-    }
-    #modoDeCor{
-
+@media(max-width: 1250px) {
+    #modoDeCor {
         bottom: 100px;
         right: 50px;
-
     }
 }
-@media(max-width: 1000px){
 
-    :root{
-
-        
+@media(max-width: 1000px) {
+     :root {
         --quadrado2: 140px;
-        --margin:15px;
+        --margin: 15px;
     }
-
-    
-    body{
-
+    body {
         font-size: 1.5vw;
     }
-    
-
-  #mapa{
-
-
-    width: 60%;
-    height: 60%;
-    margin-left: 0;
-    margin: 0 auto;
-
-  }  
-    
-    .conteudoMapa{
-
-       
-        display: none;
-        
-       
-       
+    #mapa {
+        width: 60%;
+        height: 60%;
+        margin-left: 0;
+        margin: 0 auto;
     }
-
-    #aviso{
-
+    .conteudoMapa {
+        display: none;
+    }
+    #aviso {
         font-size: 2vw;
         text-align: center;
         top: -80px;
     }
-
-    #pct{
-
+    #pct {
         font-size: 5vw;
     }
-
-    #pctIsoLeg{
-
-        font-size:2vw;
-        
-    }
-
-    #isoLeg{
-
+    #pctIsoLeg {
         font-size: 2vw;
     }
-
-    .indicadoresIco{
-
+    #isoLeg {
+        font-size: 2vw;
+    }
+    .indicadoresIco {
         display: none;
     }
-    .indicadoresNom{
-
-       padding-left: 25px;
+    .indicadoresNom {
+        padding-left: 25px;
     }
-
-    .legenda{
-
+    .legenda {
         font-size: 16px;
     }
-    .indicadoresSobre{
-
+    .indicadoresSobre {
         font-size: 3vw;
     }
-
-    .info{
-
+    .info {
         font-size: 25px;
     }
-
-    
+    #liNorte {
+        color: #9263A7;
+    }
+    #liLeste {
+        color: #E15B10;
+    }
+    #liSul {
+        color: #324C93;
+    }
+    #liCentral {
+        color: #56AF31;
+    }
+    #liOeste {
+        color: #F8DC00;
+    }
 }
 
-@media(max-width: 500px){
-
-
-    :root{
-
-        
+@media(max-width: 500px) {
+     :root {
         --quadrado2: 160px;
-    
     }
-
-    #aviso{
-
+    #aviso {
         font-size: 3vw;
     }
-
-    .indicadoresSobre{
-
+    .indicadoresSobre {
         font-size: 4vw;
     }
-    
-    #pctIsoLeg{
-
-        font-size:3vw;
+    #pctIsoLeg {
+        font-size: 3vw;
         line-height: 12px;
     }
-    
-    #modoDeCor{
-
+    #modoDeCor {
         bottom: 85px;
         right: 45px;
-
     }
-
 }

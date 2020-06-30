@@ -1,118 +1,101 @@
-.info{
-
+.info {
     widows: 100%;
     max-width: var(--conteudo);
-    margin: -30px auto 0;
-    
-    display:flex;
+    margin: 0px auto 0;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;    
-
+    flex-wrap: wrap;
     font-size: 2em;
-    
-    
 }
 
-.info div{
-
+.info div {
     width: 250px;
     text-align: center;
     margin-top: 50px;
-    
-    
-
 }
-#hospitais{
 
+#hospitais {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/hospital.svg') no-repeat;
     margin: 0 auto;
-
 }
-#leitos{
 
+#leitos {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/leitos.svg') no-repeat;
     margin: 0 auto;
 }
-#medicos{
 
+#medicos {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/medico.svg') no-repeat;
     margin: 0 auto;
 }
-#ambulancias{
 
+#ambulancias {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/ambulancia.svg') no-repeat;
     margin: 0 auto;
 }
-#enfermeiros{
 
+#enfermeiros {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/enfermeiro.svg') no-repeat;
     margin: 0 auto;
 }
-#hospitaisCampanha{
 
+#hospitaisCampanha {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/hospitalCampanha.svg') no-repeat;
     margin: 0 auto;
-
 }
-#habitantes{
 
+#habitantes {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/habitantes.svg') no-repeat;
     margin: 0 auto;
-
 }
-#idosos{
 
+#idosos {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/idosos.svg') no-repeat;
     margin: 0 auto;
-
 }
-#criancas{
 
+#criancas {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/crianca.svg') no-repeat;
     margin: 0 auto;
-
 }
-#risco{
 
+#risco {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/risco.svg') no-repeat;
     margin: 0 auto;
-
 }
-#hiperTensos{
 
+#hiperTensos {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/cardiaco.svg') no-repeat;
     margin: 0 auto;
-
 }
-#diabeticos{
 
+#diabeticos {
     height: var(--quadrado2);
     width: var(--quadrado2);
     background: url('/web/svg/diabetes.svg') no-repeat;
     margin: 0 auto;
-
 }

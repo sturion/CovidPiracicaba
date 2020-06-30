@@ -1,139 +1,113 @@
-#infectadosIco{
-
+#infectadosIco {
     height: var(--quadrado);
-    width:var(--quadrado);
+    width: var(--quadrado);
     background: url('/web/svg/infectados.svg') no-repeat;
-
 }
-#mortosIco{
 
-height: var(--quadrado);
-width: var(--quadrado);
-background: url('/web/svg/mortos.svg') no-repeat;
-
+#mortosIco {
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/mortos.svg') no-repeat;
 }
-#hospitalizadosIco{
 
+#hospitalizadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/hospitalizados.svg') no-repeat;
-
 }
-#suspeitosIco{
 
+#suspeitosIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/suspeitos.svg') no-repeat;
-
 }
-#recuperadosIco{
 
+#recuperadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/recuperados.svg') no-repeat;
 }
-#descartadosIco{
 
+#descartadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/descartados.svg') no-repeat;
-
 }
+
 .indicadoresNom {
-
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: left;
     text-align: left;
     grid-area: indicadores;
-    
-
-
 }
+
 .indicadoresIco {
-
-
     display: flex;
-    height: var(--conteudo);  
+    height: var(--conteudo);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-right:20px;
+    margin-right: 20px;
     grid-area: icones;
-
-    
 }
+
 .indicadoresUlt {
-
-
     display: flex;
-    height: var(--conteudo);  
+    height: var(--conteudo);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     grid-area: ulti;
-
-    
 }
+
 .indicadoresPre {
-
-
     display: flex;
-    height: var(--conteudo);  
+    height: var(--conteudo);
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     grid-area: prev;
-
-    
 }
-.legenda{
 
+.legenda {
     font-family: var(--titulo);
-    font-size: 0.8em;  
+    font-size: 0.8em;
     text-transform: uppercase;
     margin-top: 30px;
-
 }
-.legIco{
 
+.legIco {
     width: var(--quadrado);
     height: var(--quadrado);
-    
 }
 
-#norteIco{
-
+#norteIco {
     height: var(--quadrado);
-    width:var(--quadrado);
+    width: var(--quadrado);
     background: url('/web/svg/norte.svg') no-repeat;
-
 }
-#centralIco{
 
-height: var(--quadrado);
-width: var(--quadrado);
-background: url('/web/svg/central.svg') no-repeat;
-
+#centralIco {
+    height: var(--quadrado);
+    width: var(--quadrado);
+    background: url('/web/svg/central.svg') no-repeat;
 }
-#lesteIco{
 
+#lesteIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/leste.svg') no-repeat;
-
 }
-#sulIco{
 
+#sulIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/sul.svg') no-repeat;
-
 }
-#oesteIco{
 
+#oesteIco {
     height: var(--quadrado);
     width: var(--quadrado);
     background: url('/web/svg/oeste.svg') no-repeat;

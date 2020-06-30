@@ -1,90 +1,74 @@
-
-#caixaMapa{
-
-width: 80%;
-margin: 0 auto 0;
-display: flex;
-align-items: center;
-justify-content: space-between;
-
+#caixaMapa {
+    width: 80%;
+    margin: 0 auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#mapa{
-    
+
+#mapa {
     width: 60%;
     height: 60%;
     margin: 0 auto;
-    
 }
-.conteudoMapa{
- 
+
+.conteudoMapa {
     font-size: 1.25vw;
     margin-left: 50px;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
-.conteudoMapa div ul{
-  
-   display: none;
-   transition: var(--tempo) ease-in;
-
+.conteudoMapa div ul {
+    display: none;
+    transition: var(--tempo) ease-in;
 }
 
-#norte strong{
-
-  color:#9263A7;  
-
+#norte strong {
+    color: #9263A7;
 }
 
-#leste strong{
-
-    color:#E15B10;
-
+#leste strong {
+    color: #E15B10;
 }
 
-#sul strong{
-
-    color:#324C93;
+#sul strong {
+    color: #324C93;
 }
 
-#central strong{
-
-    color:#56AF31;
+#central strong {
+    color: #56AF31;
 }
 
-#oeste strong{
-
-    color:#F8DC00;
+#oeste strong {
+    color: #F8DC00;
 }
 
-#norte{
-
+#norte {
     margin: var(--margin);
 }
-#central{
 
+#central {
     margin: var(--margin);
 }
-#leste{
 
+#leste {
     margin: var(--margin);
 }
-#sul{
 
+#sul {
     margin: var(--margin);
 }
-#oeste{
 
+#oeste {
     margin: var(--margin);
 }
-#distritos{
 
+#distritos {
     margin: var(--margin);
     background-color: var(--cinza);
-    
 }
-#indefinidos{
 
+#indefinidos {
     margin: var(--margin);
     background-color: var(--cinza);
-    
 }

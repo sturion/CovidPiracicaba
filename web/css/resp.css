@@ -11,7 +11,7 @@
         --margin: 15px;
     }
     body {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     #mapa {
         width: 60%;
@@ -51,20 +51,14 @@
     .info {
         font-size: 25px;
     }
-    #liNorte {
-        color: #9263A7;
+    .botaoBairros {
+        display: block;
     }
-    #liLeste {
-        color: #E15B10;
-    }
-    #liSul {
-        color: #324C93;
-    }
-    #liCentral {
-        color: #56AF31;
-    }
-    #liOeste {
-        color: #F8DC00;
+}
+
+@media(max-width: 800px) {
+    body {
+        font-size: 1.5vw;
     }
 }
 

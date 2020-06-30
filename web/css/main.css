@@ -158,3 +158,49 @@ strong {
 .atencao a:hover {
     color: var(--vermelho);
 }
+
+.corNorte {
+    color: #9263A7;
+}
+
+.corLeste {
+    color: #E15B10;
+}
+
+.corSul {
+    color: #324C93;
+}
+
+.corCentral {
+    color: #56AF31;
+}
+
+.corOeste {
+    color: #F8DC00;
+}
+
+.conteudoBairros {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.botaoBairros {
+    display: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+    background-color: var(--vermelho);
+    width: 150px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: var(--tempo);
+}
+
+.botaoBairros:hover {
+    background-color: var(--branco);
+}
+
+.botaoBairros a:hover {
+    color: var(--vermelho);
+}

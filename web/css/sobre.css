@@ -1,17 +1,9 @@
-p{
-
+p {
     font-size: 0.8em;
     line-height: 2em;
     letter-spacing: 1px;
 }
 
-p a{
-
+p a {
     color: var(--vermelho);
-
-
 }
-
-
-
-

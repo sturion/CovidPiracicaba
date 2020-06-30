@@ -103,6 +103,15 @@ strong {
     font-size: 3em;
 }
 
+.conteudo2 {
+    max-width: var(--conteudo);
+    width: 100%;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-areas: 'indicadores ulti prev';
+    font-size: 3em;
+}
+
 .esp {
     width: 100%;
     height: 100px;
@@ -177,6 +186,10 @@ strong {
 
 .corOeste {
     color: #F8DC00;
+}
+
+.corVer {
+    color: var(--vermelho);
 }
 
 .conteudoBairros {

@@ -82,33 +82,3 @@
     width: var(--quadrado);
     height: var(--quadrado);
 }
-
-#norteIco {
-    height: var(--quadrado);
-    width: var(--quadrado);
-    background: url('/web/svg/norte.svg') no-repeat;
-}
-
-#centralIco {
-    height: var(--quadrado);
-    width: var(--quadrado);
-    background: url('/web/svg/central.svg') no-repeat;
-}
-
-#lesteIco {
-    height: var(--quadrado);
-    width: var(--quadrado);
-    background: url('/web/svg/leste.svg') no-repeat;
-}
-
-#sulIco {
-    height: var(--quadrado);
-    width: var(--quadrado);
-    background: url('/web/svg/sul.svg') no-repeat;
-}
-
-#oesteIco {
-    height: var(--quadrado);
-    width: var(--quadrado);
-    background: url('/web/svg/oeste.svg') no-repeat;
-}

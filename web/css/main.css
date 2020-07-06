@@ -109,7 +109,7 @@ strong {
     width: 100%;
     margin: 0 auto 0;
     display: grid;
-    grid-template-areas: 'indicadores ulti prev';
+    grid-template-areas: 'indicadores ulti prev2 prev';
     font-size: 3em;
 }
 

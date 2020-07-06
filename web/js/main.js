@@ -1,7 +1,21 @@
-
 // GATILHOS DA BARRA DE ISOLAMENTO
 
 document.getElementById("isolamento").addEventListener('input', simulador)
+
+
+// CONFIGURAÇÃO DOS DADOS REPEDIDOS NA PAGINA
+
+document.getElementById("infecNorte2").innerHTML = document.getElementById("infecNorte").innerHTML;
+document.getElementById("infecCentral2").innerHTML = document.getElementById("infecCentral").innerHTML;
+document.getElementById("infecLeste2").innerHTML = document.getElementById("infecLeste").innerHTML;
+document.getElementById("infecSul2").innerHTML = document.getElementById("infecSul").innerHTML;
+document.getElementById("infecOeste2").innerHTML = document.getElementById("infecOeste").innerHTML;
+document.getElementById("infecDistritos2").innerHTML = document.getElementById("infecDistritos").innerHTML;
+document.getElementById("infecIndefinidos2").innerHTML = document.getElementById("infecIndefinidos").innerHTML;
+document.getElementById("semanal2").innerHTML = document.getElementById("semanal").innerHTML;
+
+
+// CHAMA A FUNÇÃO UMA PRIMEIRA VEZ AO CARREGAR A PAGINA
 
 simulador();
 
@@ -85,16 +99,11 @@ function simulador() {
     let infecDistritosPrev = Math.round(rfDia10 * infecDistritos / tc) - infecDistritos;
     let infecIndefinidosPrev = Math.round(rfDia10 * infecIndefinidos / tc) - infecIndefinidos;
 
-    let pctInfecNortePrev = ((infecNortePrev / infecNorte) * 100).toFixed(2);
-    let pctInfecCentralPrev = ((infecCentralPrev / infecCentral) * 100).toFixed(2);
-    let pctInfecLestePrev = ((infecLestePrev / infecLeste) * 100).toFixed(2);
-    let pctInfecSulPrev = ((infecSulPrev / infecSul) * 100).toFixed(2);
-    let pctInfecOestePrev = ((infecOestePrev / infecOeste) * 100).toFixed(2);
-    let pctInfecDistritosPrev = ((infecDistritosPrev / infecDistritos) * 100).toFixed(2);
-    let pctInfecIndefinidosPrev = ((infecIndefinidosPrev / infecIndefinidos) * 100).toFixed(2);
-    let totalRegiao = infecNortePrev + infecCentralPrev + infecLestePrev + infecSulPrev + infecOestePrev;
 
-
+    let totalRegiaoPrev = infecNortePrev + infecCentralPrev + infecLestePrev + infecSulPrev + infecOestePrev + infecDistritosPrev + infecIndefinidosPrev;
+    let totalRegiao = infecNorte + infecCentral + infecLeste + infecSul + infecOeste + infecDistritos + infecIndefinidos;
+    let pctTotalRegiaoPrev = ((totalRegiaoPrev / totalRegiao) * 100).toFixed(1);
+    let pctTotalRegiaoPrev2 = parseFloat(pctTotalRegiaoPrev) + 100;
 
 
 
@@ -108,20 +117,15 @@ function simulador() {
         hospitalizadosPrev = hospitalizados;
         recuperadosPrev = recuperados;
 
-
-
         infecNortePrev = 0;
         infecCentralPrev = 0;
         infecLestePrev = 0;
         infecSulPrev = 0;
         infecOestePrev = 0;
-
-        pctInfecNortePrev = 0;
-        pctInfecCentralPrev = 0;
-        pctInfecLestePrev = 0;
-        pctInfecSulPrev = 0;
-        pctInfecOestePrev = 0;
-        totalRegiao = 0;
+        infecDistritosPrev = 0;
+        infecIndefinidosPrev = 0;
+        totalRegiaoPrev = 0;
+        pctTotalRegiaoPrev = 0;
 
 
     }
@@ -129,7 +133,7 @@ function simulador() {
     //SAÍDA DADOS SEMANAIS POR REGIÃO DE PIRACICABA    
 
 
-    // VALORES TOTAIS
+    // VALORES UND
 
     document.getElementById("nortePrev").innerHTML = `<strong>+</strong>${infecNortePrev} em 10 dias`;
     document.getElementById("centralPrev").innerHTML = `<strong>+</strong>${infecCentralPrev} em 10 dias`;
@@ -139,16 +143,30 @@ function simulador() {
     document.getElementById("distritosPrev").innerHTML = `<strong>+</strong>${infecDistritosPrev} em 10 dias`;
     document.getElementById("indefinidosPrev").innerHTML = `<strong>+</strong>${infecIndefinidosPrev} em 10 dias`;
 
-    // VALORES EM %
+    document.getElementById("nortePrev2").innerHTML = `+ ${infecNortePrev}`;
+    document.getElementById("centralPrev2").innerHTML = `+ ${infecCentralPrev}`;
+    document.getElementById("lestePrev2").innerHTML = `+ ${infecLestePrev}`;
+    document.getElementById("sulPrev2").innerHTML = `+ ${infecSulPrev}`;
+    document.getElementById("oestePrev2").innerHTML = `+ ${infecOestePrev}`;
+    document.getElementById("distritosPrev2").innerHTML = `+ ${infecDistritosPrev}`;
+    document.getElementById("indefinidosPrev2").innerHTML = `+ ${infecIndefinidosPrev}`;
+    document.getElementById("totalRegiaoPrev2").innerHTML = `+ ${totalRegiaoPrev}`;
+    document.getElementById("pctTotalRegiaoPrev2").innerHTML = `+ ${pctTotalRegiaoPrev}%`;
 
-    document.getElementById("pctNorte").innerHTML = `+${pctInfecNortePrev}%`;
-    document.getElementById("pctCentral").innerHTML = `+${pctInfecCentralPrev}%`;
-    document.getElementById("pctLeste").innerHTML = `+${pctInfecLestePrev}%`;
-    document.getElementById("pctSul").innerHTML = `+${pctInfecSulPrev}%`;
-    document.getElementById("pctOeste").innerHTML = `+${pctInfecOestePrev}%`;
-    document.getElementById("pctDistritos").innerHTML = `+${pctInfecDistritosPrev}%`;
-    document.getElementById("pctIndefinidos").innerHTML = `+${pctInfecIndefinidosPrev}%`;
-    document.getElementById("totalRegiao").innerHTML = `+${totalRegiao} Casos`;
+    // VALORES TOTAIS
+
+    document.getElementById("totalNorte").innerHTML = `${infecNortePrev + infecNorte}`;
+    document.getElementById("totalCentral").innerHTML = `${infecCentralPrev + infecCentral}`;
+    document.getElementById("totalLeste").innerHTML = `${infecLestePrev + infecLeste}`;
+    document.getElementById("totalSul").innerHTML = `${infecSulPrev + infecSul}`;
+    document.getElementById("totalOeste").innerHTML = `${infecOestePrev + infecOeste}`;
+    document.getElementById("totalDistritos").innerHTML = `${infecDistritosPrev + infecDistritos}`;
+    document.getElementById("totalIndefinidos").innerHTML = `${infecIndefinidosPrev+ infecIndefinidos}`;
+    document.getElementById("totalRegiaoPrev").innerHTML = `${totalRegiaoPrev + totalRegiao}`;
+    document.getElementById("infecTotalRegiao").innerHTML = `${totalRegiao}`;
+    document.getElementById("pctTotalRegiaoPrev").innerHTML = `+ ${pctTotalRegiaoPrev2}%`;
+
+
     // SAÍDA DADOS DIÁRIOS TOTAIS DE PIRACICABA
 
     document.getElementById("infectadosPrev").innerHTML = `${infectadosPrev}`;
@@ -157,7 +175,3 @@ function simulador() {
     document.getElementById("recuperadosPrev").innerHTML = `${recuperadosPrev}`;
 
 }
-
-
-
-

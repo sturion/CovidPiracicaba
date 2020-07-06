@@ -82,6 +82,7 @@ strong {
     display: inline;
     font-size: 1em;
     font-weight: 700;
+    color: var(--vermelho);
 }
 
 #barraIsolamento {
@@ -216,4 +217,17 @@ strong {
 
 .botaoBairros a:hover {
     color: var(--vermelho);
+}
+
+#marca {
+    display: inline-block;
+    transform: translateY(25%);
+    margin: 0px 15px;
+    height: 50px;
+    width: 50px;
+    background: url('/web/svg/marca.svg') no-repeat;
+}
+
+.marca {
+    color: var(--branco);
 }

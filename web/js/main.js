@@ -174,4 +174,9 @@ function simulador() {
     document.getElementById("hospitalizadosPrev").innerHTML = `${hospitalizadosPrev}`;
     document.getElementById("recuperadosPrev").innerHTML = `${recuperadosPrev}`;
 
+    document.getElementById("infectadosPrev2").innerHTML = `+ ${infectadosPrev - infectados}`;
+    document.getElementById("mortosPrev2").innerHTML = `+ ${mortosPrev - mortos}`;
+    document.getElementById("hospitalizadosPrev2").innerHTML = `+ ${hospitalizadosPrev - hospitalizados}`;
+    document.getElementById("recuperadosPrev2").innerHTML = `+ ${recuperadosPrev - recuperados}`;
+
 }

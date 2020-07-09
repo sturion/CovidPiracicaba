@@ -1,37 +1,37 @@
 #infectadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/infectados.svg') no-repeat;
+    background: url('web/svg/infectados.svg') no-repeat;
 }
 
 #mortosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/mortos.svg') no-repeat;
+    background: url('web/svg/mortos.svg') no-repeat;
 }
 
 #hospitalizadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/hospitalizados.svg') no-repeat;
+    background: url('web/svg/hospitalizados.svg') no-repeat;
 }
 
 #suspeitosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/suspeitos.svg') no-repeat;
+    background: url('web/svg/suspeitos.svg') no-repeat;
 }
 
 #recuperadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/recuperados.svg') no-repeat;
+    background: url('web/svg/recuperados.svg') no-repeat;
 }
 
 #descartadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('/web/svg/descartados.svg') no-repeat;
+    background: url('web/svg/descartados.svg') no-repeat;
 }
 
 .indicadoresNom {

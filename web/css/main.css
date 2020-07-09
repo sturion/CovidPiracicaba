@@ -225,7 +225,7 @@ strong {
     margin: 0px 15px;
     height: 50px;
     width: 50px;
-    background: url('/web/svg/marca.svg') no-repeat;
+    background: url('web/svg/marca.svg') no-repeat;
 }
 
 .marca {

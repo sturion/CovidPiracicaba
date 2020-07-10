@@ -1,7 +1,7 @@
 #infectadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('web/svg/infectados.svg') no-repeat;
+    background: url('./web/svg/infectados.svg') no-repeat;
 }
 
 #mortosIco {
@@ -13,7 +13,7 @@
 #hospitalizadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('css/hospitalizados.svg') no-repeat;
+    background: url('./web/svg/hospitalizados.svg') no-repeat;
 }
 
 #suspeitosIco {

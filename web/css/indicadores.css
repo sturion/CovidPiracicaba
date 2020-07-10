@@ -13,7 +13,7 @@
 #hospitalizadosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('web/svg/hospitalizados.svg') no-repeat;
+    background: url('css/hospitalizados.svg') no-repeat;
 }
 
 #suspeitosIco {

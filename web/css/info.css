@@ -40,7 +40,7 @@
 #ambulancias {
     height: var(--quadrado2);
     width: var(--quadrado2);
-    background: url('web/svg/ambulancia.svg') no-repeat;
+    background: url('ambulancia.svg') no-repeat;
     margin: 0 auto;
 }
 

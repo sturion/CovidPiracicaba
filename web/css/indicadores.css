@@ -7,7 +7,7 @@
 #mortosIco {
     height: var(--quadrado);
     width: var(--quadrado);
-    background: url('web/svg/mortos.svg') no-repeat;
+    background: url('./web/svg/mortos.svg') no-repeat;
 }
 
 #hospitalizadosIco {

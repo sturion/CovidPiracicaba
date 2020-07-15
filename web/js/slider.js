@@ -2,7 +2,9 @@
 
 document.getElementById("isolamento").addEventListener('input', changeCss);
 
+var UltRegIsoSlider = document.getElementById('isolamento').value
 
+console.log(UltRegIsoSlider)
 
 
 //FUNÇÃO PARA MUDAR CSS DA BARRA DE ISOLAMENTO QUANDO DISPARADA
@@ -22,6 +24,17 @@ function changeCss() {
 
     infectadosSlider = parseInt(infectadosSlider);
     infectadosPrevSlider = parseInt(infectadosPrevSlider);
+
+    if (isolamento == UltRegIsoSlider) {
+
+        document.getElementById("pct").style.color = "var(--branco)";
+        document.getElementById("aviso").style.display = "block";
+        document.getElementById("pctIsoLeg").innerHTML = `Ultima média reg.`;
+        document.getElementById("aviso").style.backgroundColor = "rgba(190,0,0,0.85)";
+        document.getElementById("aviso").innerHTML = ` Arraste a barra para simular outros valores`
+
+
+    }
 
 
     if (infectadosSlider == infectadosPrevSlider) {
@@ -57,4 +70,3 @@ function changeCss() {
     }
 
 }
-

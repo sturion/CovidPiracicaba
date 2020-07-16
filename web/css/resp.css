@@ -60,7 +60,10 @@
     body {
         font-size: 1.5vw;
     }
-    .indicadoresPre2 {
+    .indicadoresNovos {
+        display: none;
+    }
+    .indicadoresNovosMapa {
         display: none;
     }
 }

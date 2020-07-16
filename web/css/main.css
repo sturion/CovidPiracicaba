@@ -7,6 +7,7 @@
     --quadrado2: 120px;
     --titulo: 'Ubuntu', sans-serif;
     --conteudo: 800px;
+    --conteudo2: 1200px;
     --tempo: 800ms;
     --margin: 30px;
 }
@@ -100,7 +101,7 @@ strong {
     width: 100%;
     margin: 0 auto 0;
     display: grid;
-    grid-template-areas: 'icones indicadores ulti prev2 prev';
+    grid-template-areas: 'icones indicadores ulti novos prev';
     font-size: 3em;
 }
 
@@ -109,7 +110,7 @@ strong {
     width: 100%;
     margin: 0 auto 0;
     display: grid;
-    grid-template-areas: 'indicadores ulti prev2 prev';
+    grid-template-areas: 'mindicadores multi mnovos mprev';
     font-size: 3em;
 }
 

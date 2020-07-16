@@ -133,7 +133,7 @@
     grid-area: mprev;
 }
 
-.indicadoresPreMapaNovos {
+.indicadoresNovosMapa {
     display: flex;
     height: var(--conteudo2);
     flex-direction: column;

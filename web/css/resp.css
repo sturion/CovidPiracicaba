@@ -66,10 +66,17 @@
     .indicadoresNovosMapa {
         display: none;
     }
+    .indicadoresUltNovos {
+        margin-left: -100px;
+    }
+    .indicadoresIcoNovos {
+        margin-left: 20px;
+    }
 }
 
 @media(max-width: 500px) {
      :root {
+        --quadrado: 45px;
         --quadrado2: 160px;
     }
     #aviso {

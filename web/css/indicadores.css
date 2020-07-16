@@ -141,3 +141,24 @@
     align-items: center;
     grid-area: mnovos;
 }
+
+.indicadoresUltNovos {
+    display: flex;
+    height: var(--conteudo);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: ulti;
+    margin-left: -250px;
+}
+
+.indicadoresIcoNovos {
+    display: flex;
+    height: var(--conteudo);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 60px;
+    grid-area: icones;
+}

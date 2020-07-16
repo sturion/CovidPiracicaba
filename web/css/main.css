@@ -64,6 +64,7 @@ h1 a:hover {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 2sv;
+    margin-bottom: -30px;
 }
 
 .subtitulo {
@@ -111,6 +112,15 @@ strong {
     margin: 0 auto 0;
     display: grid;
     grid-template-areas: 'mindicadores multi mnovos mprev';
+    font-size: 3em;
+}
+
+.conteudoNovos {
+    max-width: var(--conteudo);
+    width: 100%;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-areas: 'icones indicadores ulti';
     font-size: 3em;
 }
 

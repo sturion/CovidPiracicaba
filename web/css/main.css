@@ -242,3 +242,14 @@ strong {
 .marca {
     color: var(--branco);
 }
+
+.grafico {
+    width: 100%;
+}
+
+.grafico iframe {
+    width: 600px;
+    height: 371px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

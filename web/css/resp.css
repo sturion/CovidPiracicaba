@@ -72,6 +72,12 @@
     .indicadoresIcoNovos {
         margin-left: 0px;
     }
+    .grafico2 {
+        display: block;
+    }
+    .grafico {
+        display: none;
+    }
 }
 
 @media(max-width: 500px) {

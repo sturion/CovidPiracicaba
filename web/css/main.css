@@ -248,8 +248,16 @@ strong {
 }
 
 .grafico iframe {
-    width: 600px;
-    height: 371px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.grafico2 {
+    width: 100%;
+    display: none;
+}
+
+.grafico2 iframe {
     margin-left: 50%;
     transform: translateX(-50%);
 }

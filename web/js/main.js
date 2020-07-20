@@ -76,7 +76,7 @@ function simulador() {
     let ac = ((2.5 / 100) * (100 - ti));
 
     let rfDia1 = 1 + ac;
-    let rfDia10 = 1 + ac + (ac * ac);
+    // let rfDia10 = 1 + ac + (ac * ac);
 
     let infectadosPrev = Math.round(rfDia1 * (infectados / tc));
 
@@ -91,13 +91,13 @@ function simulador() {
 
     //PROCESSAMENTO DADOS SEMANAIS POR REGIÃO DE PIRACICABA  
 
-    let infecNortePrev = Math.round(rfDia10 * infecNorte / tc) - infecNorte;
-    let infecCentralPrev = Math.round(rfDia10 * infecCentral / tc) - infecCentral;
-    let infecLestePrev = Math.round(rfDia10 * infecLeste / tc) - infecLeste;
-    let infecSulPrev = Math.round(rfDia10 * infecSul / tc) - infecSul;
-    let infecOestePrev = Math.round(rfDia10 * infecOeste / tc) - infecOeste;
-    let infecDistritosPrev = Math.round(rfDia10 * infecDistritos / tc) - infecDistritos;
-    let infecIndefinidosPrev = Math.round(rfDia10 * infecIndefinidos / tc) - infecIndefinidos;
+    let infecNortePrev = Math.round(rfDia1 * infecNorte / tc) - infecNorte;
+    let infecCentralPrev = Math.round(rfDia1 * infecCentral / tc) - infecCentral;
+    let infecLestePrev = Math.round(rfDia1 * infecLeste / tc) - infecLeste;
+    let infecSulPrev = Math.round(rfDia1 * infecSul / tc) - infecSul;
+    let infecOestePrev = Math.round(rfDia1 * infecOeste / tc) - infecOeste;
+    let infecDistritosPrev = Math.round(rfDia1 * infecDistritos / tc) - infecDistritos;
+    let infecIndefinidosPrev = Math.round(rfDia1 * infecIndefinidos / tc) - infecIndefinidos;
 
 
     let totalRegiaoPrev = infecNortePrev + infecCentralPrev + infecLestePrev + infecSulPrev + infecOestePrev + infecDistritosPrev + infecIndefinidosPrev;
@@ -135,13 +135,13 @@ function simulador() {
 
     // VALORES UND
 
-    document.getElementById("nortePrev").innerHTML = `<strong>+</strong>${infecNortePrev} em 10 dias`;
-    document.getElementById("centralPrev").innerHTML = `<strong>+</strong>${infecCentralPrev} em 10 dias`;
-    document.getElementById("lestePrev").innerHTML = `<strong>+</strong>${infecLestePrev} em 10 dias`;
-    document.getElementById("sulPrev").innerHTML = `<strong>+</strong>${infecSulPrev} em 10 dias`;
-    document.getElementById("oestePrev").innerHTML = `<strong>+</strong>${infecOestePrev} em 10 dias`;
-    document.getElementById("distritosPrev").innerHTML = `<strong>+</strong>${infecDistritosPrev} em 10 dias`;
-    document.getElementById("indefinidosPrev").innerHTML = `<strong>+</strong>${infecIndefinidosPrev} em 10 dias`;
+    document.getElementById("nortePrev").innerHTML = `<strong>+</strong>${infecNortePrev} em 5 dias`;
+    document.getElementById("centralPrev").innerHTML = `<strong>+</strong>${infecCentralPrev} em 5 dias`;
+    document.getElementById("lestePrev").innerHTML = `<strong>+</strong>${infecLestePrev} em 5 dias`;
+    document.getElementById("sulPrev").innerHTML = `<strong>+</strong>${infecSulPrev} em 5 dias`;
+    document.getElementById("oestePrev").innerHTML = `<strong>+</strong>${infecOestePrev} em 5 dias`;
+    document.getElementById("distritosPrev").innerHTML = `<strong>+</strong>${infecDistritosPrev} em 5 dias`;
+    document.getElementById("indefinidosPrev").innerHTML = `<strong>+</strong>${infecIndefinidosPrev} em 5 dias`;
 
     document.getElementById("nortePrev2").innerHTML = `+ ${infecNortePrev}`;
     document.getElementById("centralPrev2").innerHTML = `+ ${infecCentralPrev}`;

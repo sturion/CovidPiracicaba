@@ -71,7 +71,7 @@ function simulador() {
 
     // PROCESSAMENTO DADOS DIARIOS TOTAIS DE PIRACICABA
 
-    let tc = 2.08;
+    let tc = 2.080;
 
     let ac = ((2.5 / 100) * (100 - ti));
 

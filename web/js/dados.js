@@ -35,7 +35,6 @@ async function capturarDados() {
             .catch((error) => {
                 console.log(error);
             });
-
         Mortos.innerHTML = dados.obitos;
         Infectados.innerHTML = dados.positivados;
         Tratamento.innerHTML = dados.tratamento;
@@ -60,9 +59,13 @@ async function capturarDados() {
         for (const key in date) {
             if (date[key].innerText) {
                 date[key].innerText =
-                    dateFormatted.getDate() +
+                    (dateFormatted.getDate() < 10
+                        ? "0" + dateFormatted.getDate()
+                        : dateFormatted.getDate()) +
                     " / " +
-                    (dateFormatted.getMonth() + 1) +
+                    (dateFormatted.getMonth() + 1 < 10
+                        ? "0" + (dateFormatted.getMonth() + 1)
+                        : dateFormatted.getMonth() + 1) +
                     " / " +
                     dateFormatted.getFullYear();
             }

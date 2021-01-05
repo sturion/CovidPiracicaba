@@ -57,7 +57,7 @@ async function capturarDados() {
             dados.newDescartados <= 0 ? 0 : "+ " + dados.newDescartados;
         let dateFormatted = new Date(dados.date);
         for (const key in date) {
-            if (date[key].innerText) {
+            if (date[key] != 2) {
                 date[key].innerText =
                     (dateFormatted.getDate() < 10
                         ? "0" + dateFormatted.getDate()

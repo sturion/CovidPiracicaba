@@ -50,12 +50,15 @@
     <link rel="stylesheet" href="web/css/slider.css">
     <link rel="stylesheet" href="web/css/info.css">
     <link rel="stylesheet" href="web/css/resp.css">
+    <link rel="stylesheet" href="web/css/loader.css">
 
 
 </head>
 
 <body>
-
+     <div class="loader" id="loader" >
+        <div class="spinner-border"></div>
+    </div>
     <header>
 
 
@@ -102,12 +105,12 @@
 
             <li class="legenda">Ult. Registro</li>
 
-            <li id="mortos"></li>
-            <li id="infectados"></li>
-            <li id="hospitalizados"></li>
-            <li id="suspeitos"></li>
-            <li id="recuperados"></li>
-            <li id="descartados"></li>
+            <li id="mortos">-</li>
+            <li id="infectados">-</li>
+            <li id="hospitalizados">-</li>
+            <li id="suspeitos">-</li>
+            <li id="recuperados">-</li>
+            <li id="descartados">-</li>
 
         </ul>
 
@@ -181,12 +184,12 @@
 
             <ul class="indicadoresUltNovos">
 
-                <li name="nMortos"      id="nMortos">+ 1</li>
-                <li name="nInfectados"  id="nInfectados">+ 122</li>
-                <li name="nTratamento"  id="nTratamento">+ 66</li>
-                <li name="nSuspeitos"   id="nSuspeitos">+ 251</li>
-                <li name="nRecuperados" id="nRecuperados">+ 55</li>
-                <li name="nDescartados" id="nDescartados">+ 332</li>
+                <li name="nMortos"      id="nMortos">-</li>
+                <li name="nInfectados"  id="nInfectados">-</li>
+                <li name="nTratamento"  id="nTratamento">-</li>
+                <li name="nSuspeitos"   id="nSuspeitos">-</li>
+                <li name="nRecuperados" id="nRecuperados">-</li>
+                <li name="nDescartados" id="nDescartados">-</li>
 
 
             </ul>

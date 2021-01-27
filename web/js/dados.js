@@ -62,8 +62,8 @@ async function capturarDados() {
             if (date[key] != 2) {
                 date[key].innerText =
                     (dateFormatted.getDate() < 10
-                        ? "0" + (dateFormatted.getDate() + 1)
-                        : dateFormatted.getDate() + 1) +
+                        ? "0" + dateFormatted.getDate()
+                        : dateFormatted.getDate()) +
                     " / " +
                     (dateFormatted.getMonth() + 1 < 10
                         ? "0" + (dateFormatted.getMonth() + 1)

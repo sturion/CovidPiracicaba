@@ -12,11 +12,13 @@ var nTratamento = document.getElementById("nTratamento");
 var nSuspeitos = document.getElementById("nSuspeitos");
 var nRecuperados = document.getElementById("nRecuperados");
 var nDescartados = document.getElementById("nDescartados");
+var loader = document.getElementById("loader");
 
 var date = document.getElementsByClassName("date");
 
 async function capturarDados() {
     try {
+        loader.style.display = "flex";
         let dados = await fetch(
             "https://api-covid-piracicaba.herokuapp.com/dados",
             {
@@ -70,6 +72,7 @@ async function capturarDados() {
                     dateFormatted.getFullYear();
             }
         }
+        loader.style.display = "none";
         simulador();
     } catch (error) {
         console.log(error);

@@ -20,7 +20,7 @@ async function capturarDados() {
     try {
         loader.style.display = "flex";
         let dados = await fetch(
-            "https://api-covid-piracicaba.herokuapp.com/dados",
+            "http://68.183.138.83/covidapi/dados",
             {
                 method: "GET",
                 headers: {

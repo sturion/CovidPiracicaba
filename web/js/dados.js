@@ -12,11 +12,13 @@ var nTratamento = document.getElementById("nTratamento");
 var nSuspeitos = document.getElementById("nSuspeitos");
 var nRecuperados = document.getElementById("nRecuperados");
 var nDescartados = document.getElementById("nDescartados");
+var loader = document.getElementById("loader");
 
 var date = document.getElementsByClassName("date");
 
 async function capturarDados() {
     try {
+        loader.style.display = "flex";
         let dados = await fetch(
             "http://68.183.138.83/covidapi/dados",
             {
@@ -60,8 +62,8 @@ async function capturarDados() {
             if (date[key] != 2) {
                 date[key].innerText =
                     (dateFormatted.getDate() < 10
-                        ? "0" + (dateFormatted.getDate() + 1)
-                        : dateFormatted.getDate() + 1) +
+                        ? "0" + dateFormatted.getDate()
+                        : dateFormatted.getDate()) +
                     " / " +
                     (dateFormatted.getMonth() + 1 < 10
                         ? "0" + (dateFormatted.getMonth() + 1)
@@ -70,6 +72,7 @@ async function capturarDados() {
                     dateFormatted.getFullYear();
             }
         }
+        loader.style.display = "none";
         simulador();
     } catch (error) {
         console.log(error);

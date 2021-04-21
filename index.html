@@ -50,12 +50,15 @@
     <link rel="stylesheet" href="web/css/slider.css">
     <link rel="stylesheet" href="web/css/info.css">
     <link rel="stylesheet" href="web/css/resp.css">
+    <link rel="stylesheet" href="web/css/loader.css">
 
 
 </head>
 
 <body>
-
+     <div class="loader" id="loader" >
+        <div class="spinner-border"></div>
+    </div>
     <header>
 
 
@@ -102,12 +105,12 @@
 
             <li class="legenda">Ult. Registro</li>
 
-            <li id="mortos"></li>
-            <li id="infectados"></li>
-            <li id="hospitalizados"></li>
-            <li id="suspeitos"></li>
-            <li id="recuperados"></li>
-            <li id="descartados"></li>
+            <li id="mortos">-</li>
+            <li id="infectados">-</li>
+            <li id="hospitalizados">-</li>
+            <li id="suspeitos">-</li>
+            <li id="recuperados">-</li>
+            <li id="descartados">-</li>
 
         </ul>
 
@@ -181,12 +184,12 @@
 
             <ul class="indicadoresUltNovos">
 
-                <li name="nMortos"      id="nMortos">+ 1</li>
-                <li name="nInfectados"  id="nInfectados">+ 122</li>
-                <li name="nTratamento"  id="nTratamento">+ 66</li>
-                <li name="nSuspeitos"   id="nSuspeitos">+ 251</li>
-                <li name="nRecuperados" id="nRecuperados">+ 55</li>
-                <li name="nDescartados" id="nDescartados">+ 332</li>
+                <li name="nMortos"      id="nMortos">-</li>
+                <li name="nInfectados"  id="nInfectados">-</li>
+                <li name="nTratamento"  id="nTratamento">-</li>
+                <li name="nSuspeitos"   id="nSuspeitos">-</li>
+                <li name="nRecuperados" id="nRecuperados">-</li>
+                <li name="nDescartados" id="nDescartados">-</li>
 
 
             </ul>
@@ -196,7 +199,7 @@
 
         <div class="esp2"></div>
         <div>
-            <h1 class="subtitulo" id="semanal"><a href="https://www.facebook.com/negribarjas/photos/a.1040021242705924/4643411622366850/">\\ Dados semanais por região de Piracicaba <h2 class="data" >18-11-2020</h2> \\</a></h1>
+            <h1 class="subtitulo" id="semanal"><a href="https://www.facebook.com/negribarjas/photos/a.1040021242705924/4643411622366850/">\\ Dados semanais por região de Piracicaba <h2 class="data">18-11-2020</h2> \\</a></h1>
         </div>
 
         <div id="caixaMapa">
@@ -1086,7 +1089,7 @@
         </div>
         <div class="esp"></div>
         <div>
-            <h1 class="titulo"><a href="https://transparencia.piracicaba.sp.gov.br/relatorio/listagem-de-servidores/" target="_blank">\\ Sistema de Saúde de Piracicba - <h2 class="data">Fonte: CMSP</h2> \\</a></h1>
+            <h1 class="titulo"><a href="https://transparencia.piracicaba.sp.gov.br/relatorio/listagem-de-servidores/" target="_blank">\\ Sistema de Súade de Piracicba - <h2 class="data">Fonte: CMSP</h2> \\</a></h1>
         </div>
         <div class="esp2"></div>
         <div class="info">
@@ -1151,10 +1154,12 @@
         </div>
         <div id="modoDeCor" onclick="tema()"></div>
         <div class="esp3"></div>
-        <script type="module" src="web/js/dados.js"></script>
-        <script  src="web/js/mapa.js"></script>
+	
+		<script type="module" src="web/js/dados.js"></script>
+        <script src="web/js/mapa.js"></script>
         <script src="web/js/slider.js"></script>
-        <script src="web/js/cor.js"></script>
+		<script src="web/js/cor.js"></script>
+		
 </body>
 
 </html>

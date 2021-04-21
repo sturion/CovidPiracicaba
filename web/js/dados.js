@@ -18,7 +18,7 @@ var date = document.getElementsByClassName("date");
 async function capturarDados() {
     try {
         let dados = await fetch(
-            "https://api-covid-piracicaba.herokuapp.com/dados",
+            "http://68.183.138.83/covidapi/dados",
             {
                 method: "GET",
                 headers: {

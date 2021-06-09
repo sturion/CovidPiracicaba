@@ -1,63 +1,70 @@
 import simulador from "./main.js";
-var Mortos = document.getElementById("mortos");
-var Infectados = document.getElementById("infectados");
-var Tratamento = document.getElementById("hospitalizados");
-var Suspeitos = document.getElementById("suspeitos");
-var Recuperados = document.getElementById("recuperados");
-var Descartados = document.getElementById("descartados");
+let Mortos = document.getElementById("mortos");
+let Infectados = document.getElementById("infectados");
+let Tratamento = document.getElementById("hospitalizados");
+let Suspeitos = document.getElementById("suspeitos");
+let Recuperados = document.getElementById("recuperados");
+let Descartados = document.getElementById("descartados");
 
-var nMortos = document.getElementById("nMortos");
-var nInfectados = document.getElementById("nInfectados");
-var nTratamento = document.getElementById("nTratamento");
-var nSuspeitos = document.getElementById("nSuspeitos");
-var nRecuperados = document.getElementById("nRecuperados");
-var nDescartados = document.getElementById("nDescartados");
-var loader = document.getElementById("loader");
+let nMortos = document.getElementById("nMortos");
+let nInfectados = document.getElementById("nInfectados");
+let nTratamento = document.getElementById("nTratamento");
+let nSuspeitos = document.getElementById("nSuspeitos");
+let nRecuperados = document.getElementById("nRecuperados");
+let nDescartados = document.getElementById("nDescartados");
+let loader = document.getElementById("loader");
 
-var date = document.getElementsByClassName("date");
+let date = document.getElementsByClassName("date");
 
 async function capturarDados() {
     try {
         loader.style.display = "flex";
-        let dados = await fetch(
-            "http://68.183.138.83/covidapi/dados",
-            {
-                method: "GET",
-                headers: {
-                    Accept: "application/vnd.github.v3.text-match+json",
-                    "Content-Type": "application/json",
-                    "Access-Control-Allow-Credentials": true,
-                },
-                mode: "cors",
-            }
-        )
+        let {
+            obitos,
+            positivados,
+            tratamento,
+            suspeitos,
+            recuperados,
+            descartados,
+            newObitos,
+            newDescartados,
+            newPositivados,
+            newRecuperados,
+            newSuspeitos,
+            newTratamento,
+            date: dateDados,
+        } = await fetch("https://apistest.myddns.me/covidapi/dados", {
+            method: "GET",
+            headers: {
+                Accept: "application/vnd.github.v3.text-match+json",
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Credentials": true,
+            },
+            mode: "cors",
+        })
             .then((response) => {
                 return response.json();
             })
             .catch((error) => {
                 console.log(error);
             });
-        Mortos.innerHTML = dados.obitos;
-        Infectados.innerHTML = dados.positivados;
-        Tratamento.innerHTML = dados.tratamento;
-        Suspeitos.innerHTML = dados.suspeitos;
-        Recuperados.innerHTML = dados.recuperados;
-        Descartados.innerHTML = dados.descartados;
 
-        nMortos.innerHTML = dados.newObitos <= 0 ? 0 : "+ " + dados.newObitos;
-
-        nInfectados.innerText =
-            dados.newPositivados <= 0 ? 0 : "+ " + dados.newPositivados;
-
-        nTratamento.innerHTML =
-            dados.newTratamento <= 0 ? 0 : "+ " + dados.newTratamento;
-        nSuspeitos.innerHTML =
-            dados.newSuspeitos <= 0 ? 0 : "+ " + dados.newSuspeitos;
+        Mortos.innerHTML = obitos;
+        Infectados.innerHTML = positivados;
+        Tratamento.innerHTML = tratamento;
+        Suspeitos.innerHTML = suspeitos;
+        Recuperados.innerHTML = recuperados;
+        Descartados.innerHTML = descartados;
+        nMortos.innerHTML = newObitos <= 0 ? 0 : "+ " + newObitos;
+        nInfectados.innerText = newPositivados <= 0 ? 0 : "+ " + newPositivados;
+        nTratamento.innerHTML = newTratamento <= 0 ? 0 : "+ " + newTratamento;
+        nSuspeitos.innerHTML = newSuspeitos <= 0 ? 0 : "+ " + newSuspeitos;
         nRecuperados.innerHTML =
-            dados.newRecuperados <= 0 ? 0 : "+ " + dados.newRecuperados;
+            newRecuperados <= 0 ? 0 : "+ " + newRecuperados;
         nDescartados.innerHTML =
-            dados.newDescartados <= 0 ? 0 : "+ " + dados.newDescartados;
-        let dateFormatted = new Date(dados.date);
+            newDescartados <= 0 ? 0 : "+ " + newDescartados;
+
+        const dateFormatted = new Date(dateDados);
         for (const key in date) {
             if (date[key] != 2) {
                 date[key].innerText =

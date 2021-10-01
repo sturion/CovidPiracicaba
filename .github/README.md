@@ -1,4 +1,4 @@
-# CovidPiracicaba
+# CovidPiracicaba - DESATIVADO (ALGORITMO OBSOLETO)
 
 Welcome!
 

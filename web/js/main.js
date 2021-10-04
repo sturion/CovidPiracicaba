@@ -73,7 +73,7 @@ export default function simulador() {
 
     let tc = 3;
 
-    let ac = (2.5 / 100) * (100 - ti);
+    let ac = (2.5 / 100) * (100 - (ti/2));
 
     let rfDia1 = 1 + ac;
     // let rfDia10 = 1 + ac + (ac * ac);
